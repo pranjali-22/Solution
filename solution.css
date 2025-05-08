@@ -1,0 +1,70 @@
+/*
+
+- Create a card UI similar to the image using HTML and CSS
+- It doesn't need to be an exact replica
+- You can use any name, photo, URL
+
+*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 20px 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 350px;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .info {
+      flex-grow: 1;
+    }
+
+    .info h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .info a {
+      color: blue;
+      text-decoration: underline;
+      font-size: 0.95rem;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="info">
+      <h2>Felonious Gru</h2>
+      <a href="https://example.com" target="_blank">example.com</a>
+    </div>
+    <img class="avatar" src="3403439a-0cb3-49a5-a194-63a4a10c83d3.png" alt="Avatar" />
+  </div>
+</body>
+</html>
